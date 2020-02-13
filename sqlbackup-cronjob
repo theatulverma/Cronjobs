@@ -1,1 +1,6 @@
 0 0 * * 0 date=`date -I`; /usr/bin/mysqldump -uDBUSERNAME -pPASSWORD dbname > /home/CPANELUSERNAME/FILE_NAME_HOME_DIRECTORY$date.sql
+
+
+
+
+0 0 * * * /path/to/mysqldump ... > /path/to/backup/mydata_$( date +"%Y_%m_%d" ).sql
